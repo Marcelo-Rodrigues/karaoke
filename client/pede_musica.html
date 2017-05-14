@@ -1,0 +1,53 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset = "UTF-8"/>
+		<link rel ="stylesheet" type ="text/css" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel ="stylesheet" type ="text/css" href = "css/principal.css">
+	</head>
+	<body>
+		<header>
+		<div class = "jumbotron">
+			<h1 > Pede música! </h1>
+		</div>
+		</header>
+		<label for ="filtrar-tabela"> Filtre: </label>
+		<input type="text" name="pesquisa" id = "pesquisa" placeholder="Digite o nome da música">
+
+		<section class = "container">
+		
+			<table class ="table table-striped">
+				<thead>
+					<tr>
+						<th> Gênero </th>
+						<th> Cantor(a) </th>
+						<th> Música </th>
+						<th> Repete? </th>
+					</tr>
+				</thead>
+					<tbody id = "tabela-musicas">
+						<tr class = "musica">
+						<td class ="info-genero"> Sertanejo </td>
+						<td class ="info-cantor"> Simone </td>
+						<td class ="info-musica"> Substituto </td>
+						<td class ="info-repete"> <input  type="checkbox" name="repete"> </td>
+						<td class ="info-audio"> <audio src="Simone.mp3"  preload = "auto" controls ></audio>
+						</tr>
+						<tr class ="musica">
+						<td class ="info-genero"> Sertanejo </td>
+						<td class ="info-cantor"> Simone </td>
+						<td class ="info-musica"> teste </td>
+						<td class ="info-repete"> <input  type="checkbox" name="repete"> </td>
+						<td class ="info-audio"> <audio src="Simone.mp3"  preload = "auto" controls ></audio>
+					</tbody>
+		</table>
+		
+			
+</section>
+
+
+	</body>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" > </script>
+	<script src ="js/filtra.js"></script>
+</html>
