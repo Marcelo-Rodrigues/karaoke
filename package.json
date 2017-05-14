@@ -2,8 +2,9 @@
   "name": "karaokeserver",
   "version": "1.0.0",
   "description": "Servidor de Karaoke",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
+    "start": "node server/index.js",
     "test": "./node_modules/.bin/jasmine-node spec"
   },
   "repository": {
