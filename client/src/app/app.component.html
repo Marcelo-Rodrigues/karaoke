@@ -1,0 +1,11 @@
+<span *ngFor="let pedido of pedidos">
+<ul class="papel">
+  <li>Música {{pedido.nomemusica}}</li>
+  <li>De {{pedido.nomecantor}}</li>
+  <li>Pedida por {{pedido.nomesolicitante}}</li>
+</ul>
+<label class="serrilhado-laterais">{{pedido.posicao}}</label>
+</span>
+<br><br><br>
+<input type="button" (click)="criar()" value="+">
+  
