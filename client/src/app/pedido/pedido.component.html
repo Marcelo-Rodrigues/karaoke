@@ -1,0 +1,5 @@
+<ul class="papel" *ngFor="let pedido of pedidos">
+  <li class="posicao"><span class="posicao">#{{pedido.posicao}}</span> <b>{{pedido.nomemusica}}</b></li>
+  <li>De {{pedido.nomecantor}}</li>
+  <li>Pedida por {{pedido.nomesolicitante}}</li>
+</ul>
