@@ -3,7 +3,7 @@ var app     = express();
 
 console.log('Servidor iniciado na porta %s',
 app
-.use('/', express.static(__dirname + '/../client'))
+.use('/', express.static(__dirname + '/../client/dist'))
 .all("/", function (req, res) {
   res.redirect("/index.html");
 })
