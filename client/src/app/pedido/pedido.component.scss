@@ -3,28 +3,23 @@
 	font-size: 18px;
     font-family: 'Dancing Script', cursive;
     display: block;
-}
+    margin: -50px 40px;
 
-.papel{
-	margin: -50px 40px;
-}
+    &:hover {
+        transition: 0.2s;
+        transform: scale(1.1,1.1);
+        box-shadow: 3px 1px 7px 5px rgba(0,0,0,.2);        
+        margin-bottom: 10px; 
+        
+        &+.papel{
+            margin-top: unset;
+        }
+    }
 
-.papel:hover {
-    transition: 0.2s;
-    transform: scale(1.1,1.1);
-    box-shadow: 3px 1px 7px 5px rgba(0,0,0,.2);        
-    margin-bottom: 10px; 
-}
+    &:first-child{
+        margin-top: 40px;
+    }
 
-.papel:first-child{
-    margin-top: 40px;
-}
-
-.papel:hover+.papel{
-    margin-top: unset;
-}
-
-.papel{
 	list-style: none;
 	position: relative;
 	width: 300px;
@@ -38,7 +33,26 @@
 	
 	text-shadow: 0 1px 0 white;
     transition: 0.2s;
+
+
+    li {
+        border-bottom: 1px solid rgba(205,220,243,1);
+        padding: 8px 10px 2px 35px;
+        
+        &:first-of-type:after {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: -1px;
+            border-left: 1px solid rgba(240,214,213,1);
+            border-right: 1px solid rgba(240,214,213,1);
+            width: 1px;
+            height: 101%;
+        }
+    }
+
 }
+
 span.posicao {
   background: #ddd;
   min-width: 320px;
@@ -59,21 +73,6 @@ span.posicao {
     transform: scale(1.1,1.1);
 }  */
 
-.papel li {
-	border-bottom: 1px solid rgba(205,220,243,1);
-	padding: 8px 10px 2px 35px;
-}
-
-.papel li:first-of-type:after {
-	content: '';
-	position: absolute;
-	left: 25px;
-	top: -1px;
-	border-left: 1px solid rgba(240,214,213,1);
-	border-right: 1px solid rgba(240,214,213,1);
-	width: 1px;
-	height: 101%;
-}
 
 /* 
 .posicao:after,
